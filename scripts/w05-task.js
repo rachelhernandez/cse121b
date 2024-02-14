@@ -55,10 +55,10 @@ const filterTemples = (temples) => {
             break;
         case "older":
             const olderTemples = temples[0].filter(temple => {
-                const dedicationDate = new Date(temple.dedicated);
-                const comparisonDate = new Date(1950, 0, 1)
+                const dedicatedDate = new Date(temple.dedicated);
+                const newDate = new Date(1950, 0, 1)
                 
-                return comparisonDate > dedicationDate;
+                return newDate > dedicatedDate;
             });  
         
             displayTemples(olderTemples);
