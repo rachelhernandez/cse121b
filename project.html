@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W05: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #getJokesBtn,
+    #rateJokeBtn {
+      font-size: 1.5em;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    #rateJokeInput {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    #jokeBox {
+      border: 2px solid #ccc;
+      padding: 10px;
+      margin: 20px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    #jokeDisplay {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html"class="active">Project</a></li>
+    </ul>
+  </nav>
+
+  <h1>Joke Explorer</h1>
+
+  <button id="getJokesBtn">Get Jokes</button>
+  <button id="rateJokeBtn">Rate Joke</button>
+  <input type="number" id="rateJokeInput" placeholder="Enter rating (1-5)">
+
+  <div id="jokeBox">
+    <div id="jokeDisplay">Your joke here</div>
+  </div>
+
+  <script src="project.js"></script>
+
+</body>
+
+</html>
